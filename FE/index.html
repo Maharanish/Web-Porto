@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <title>Maha's Portfolio</title>
+        <link href="src/output.css" rel="stylesheet">  
+        <style>
+            #home {
+                height: 100vh; 
+                display: flex;
+                align-items: center; 
+                justify-content: center; 
+                .container {
+                    text-align: center; 
+                }
+            }
+            #profile {
+                height: 100vh; 
+                display: flex;
+                align-items: center; 
+                justify-content: center; 
+                flex-direction: column;
+            }
+            #contact {
+                background-color: black;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10" >
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-4">
+                        <a href="#home" class="font-extrabold text-blue-900 block py-6"> Maha's Portfolio</a>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button id="navbar" name="navbar" type="button" class="block absolute right-1 lg:hidden">
+                            <span class="navbar-item origin-top-left transition duration-300 ease-in-out"></span>
+                            <span class="navbar-item transition duration-300 ease-in-out"></span>
+                            <span class="navbar-item origin-bottom-left transition duration-300 ease-in-out"></span>
+                        </button>
+
+                        <nav id="navmenu" class="hidden absolute py-5 bg-red-100 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                            <ul class="block lg:flex lg:mr-0">
+                                <li class="group">
+                                    <a href="#home" class="text-textbase font-semibold text-black py-2 mx-8 flex group-hover:text-blue-900">Home</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#profile" class="text-textbase font-semibold text-black py-2 mx-8 flex group-hover:text-blue-900">Profile</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#project" class="text-textbase font-semibold text-black py-2 mx-8 flex group-hover:text-blue-900">Project</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#contact" class="text-textbase font-semibold text-black py-2 mx-8 flex group-hover:text-blue-900">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-full self-center px-4">
+                        <h1 class="text-5xl font-extrabold text-blue-900 text-center">Welcome to my Portfolio!</h1>
+                        <p class="text-base font-semibold">Explore my journey as an undergraduate Computer Science student at ITB. This portfolio showcases my projects, skills, and experiences in technology development such as web development, software development, and data analysis. Here, you'll find a collection of my work, including academic projects, personal endeavors, and collaborative initiatives. Dive in to see how I turn ideas into impactful solutions and stay updated with my latest accomplishments and learning experiences.</p>
+                        <a href="#profile" class="text-base font-semibold text-white bg-blue-900 py-3 px-8 rounded-full hover:shadow-lg hover:bg-blue-800">Get To Know Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Profile Section-->
+        <section id="profile">
+            <div class="container">
+                <div class="profile-section">
+                    <div class="profile-details">
+                        <h1 class="text-5xl font-extrabold text-blue-900 mt-50" mr="10">Profile</h1>
+                        <div class="profile-content">
+                            <div class="profile-item">
+                                <img src="images/user-icon.png" alt="User Icon" class="profile-icon">
+                                <p class="text-2xl font-serif-Cambria font-extrabold">Shabrina Maharani</p>
+                            </div>
+                            <div class="profile-item">
+                                <img src="images/calendar-icon.png" alt="Calendar Icon" class="profile-icon">
+                                <p class="text-2xl font-serif-Cambria font-extrabold">22 November 2004</p>
+                            </div>
+                            <div class="profile-item">
+                                <img src="images/location-icon.png" alt="Location Icon" class="profile-icon">
+                                <p class="text-2xl font-serif-Cambria font-extrabold">South Jakarta, Jakarta</p>
+                            </div>
+                            <div class="profile-item">
+                                <img src="images/university-icon.png" alt="University Icon" class="profile-icon">
+                                <p class="text-2xl font-serif-Cambria font-extrabold">Bandung Institute of Technology - School of Electrical Engineering and Informatics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/foto.png" alt="Shabrina Maharani" class="max-w-full mx-auto"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="project">
+            <div class="container mx-auto px-4">
+                <div class="w-full px-4">
+                    <div class="max-w-xl mb-5">
+                        <h1 class="text-5xl font-extrabold text-blue-900 mr-400">Latest Project</h1>
+                        <p class="text-base font-semibold mr-400">Here are my 5 latest projects.</p>
+                    </div>
+                </div>
+
+                <!-- Software Dev -->
+                <div class="w-full px-4">
+                    <div class="max-w-xl mb-2">
+                        <h1 class="text-2xl font-extrabold text-blue-900 mr-400">Software Development</h1>
+                    </div>
+                </div>
+                <div class="w-full px-4 flex flex-wrap lg:flex-nowrap">
+                    <!-- sw1 -->
+                    <div class="mb-12 p-4 md:w-full lg:w-1/2">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="images/project/sw1.png" alt="rpl" class="w-full"/>
+                        </div>
+                        <a href="https://github.com/Maharanish/IF2250-2024-K03-07-NomNom" class="hover:shadow-lg transition-shadow duration-300 block mt-5 mb-3">
+                            <h3 class="font-semibold text-xl text-blue-900">NomNom : Meal Scheduler</h3>
+                        </a>
+                        <p class="font-medium text-base text-secondary">NomNom is a user-friendly meal planning app that allows efficient scheduling, detailed recipe viewing, and seamless shopping list management. It offers offline access and requires no authentication, providing convenient flexibility for diverse meal planning needs. I contributed to designing the UI and integrating the backend with the database. If you want to explore the project further, you can click directly on the project title.</p>
+                    </div>
+                    <!-- sw2 -->
+                    <div class="mb-12 p-4 md:w-full lg:w-1/2">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="images/project/sw3.png" alt="oop" class="w-full"/>
+                        </div>
+                        <a href="https://github.com/Maharanish/Tubes2_OOP" class="hover:shadow-lg transition-shadow duration-300 block mt-5 mb-3">
+                            <h3 class="font-semibold text-xl text-blue-900">Farm House Game</h3>
+                        </a>
+                        <p class="font-medium text-base text-secondary">This Java-based farm management application uses JavaFX for its graphical user interface (GUI), supporting gameplay for two players to plant crops, raise animals, sell products, handle item cards, defend against bear attacks, and aim to earn the most money in 20 turns. It includes save & load functionality in txt format and supports additional file formats via a plugin. I contributed to integrating UI elements with the backend and provided backend support during development. If you want to explore the project further, you can click directly on the project title.</p>
+                    </div>
+                </div>
+
+                <!-- Web Dev -->
+                <div class="w-full px-4">
+                    <div class="max-w-xl mb-2">
+                        <h1 class="text-2xl font-extrabold text-blue-900 mr-400">Web Development</h1>
+                    </div>
+                </div>
+                <div class="w-full px-4 flex flex-wrap lg:flex-nowrap">
+                    <!-- sw1 -->
+                    <div class="mb-12 p-4 md:w-full lg:w-1/2">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="images/project/wd1.png" alt="rpl" class="w-full"/>
+                        </div>
+                        <a href="https://github.com/Maharanish/Tubes2_GasAja" class="hover:shadow-lg transition-shadow duration-300 block mt-5 mb-3">
+                            <h3 class="font-semibold text-xl text-blue-900">Wikirace Solver</h3>
+                        </a>
+                        <p class="font-medium text-base text-secondary">GasAja WikiRace Solver tackles WikiRace challenges with precision and speed using search algorithms like Iterative Deepening Search (IDS) and BFS. I contributed to the backend by developing and optimizing the IDS algorithm. If you want to explore the project further, you can click directly on the project title.</p>
+                    </div>
+                    <!-- sw2 -->
+                    <div class="mb-12 p-4 md:w-full lg:w-1/2">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="images/project/wd2.png" alt="oop" class="w-full"/>
+                        </div>
+                        <a href="https://github.com/Maharanish/Algeo02-22134" class="hover:shadow-lg transition-shadow duration-300 block mt-5 mb-3">
+                            <h3 class="font-semibold text-xl text-blue-900">GoMilk : An Image retrieval website with CONTENT-BASED INFORMATION RETRIEVAL system</h3>
+                        </a>
+                        <p class="font-medium text-base text-secondary">This website enables intuitive searches based on visual content. I contributed to the backend, developing algorithms for image processing and searching for similar images using CBIR concept. If you want to explore the project further, you can click directly on the project title.</p>
+                    </div>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="w-full px-4">
+                    <div class="max-w-xl mb-2">
+                        <h1 class="text-2xl font-extrabold text-blue-900 mr-400">Data Analysis</h1>
+                    </div>
+                </div>
+                
+                <div class="w-full px-4 flex flex-wrap justify-center">
+                    <!-- sw1 -->
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="images/project/da.png" alt="rpl" width="w-full"/>
+                        </div>
+                        <a href="https://github.com/Maharanish/K03-IF2220-13522134-13522148" class="hover:shadow-lg transition-shadow duration-300 block mt-5 mb-3">
+                            <h3 class="font-semibold text-xl text-blue-900">Health Data Analysis</h3>
+                        </a>
+                        <p class="font-medium text-base text-secondary">I developed a data analysis project focused on health data from a specific region. The analysis is based on probability and statistical concepts, performed using IPython notebooks (ipynb). If you want to explore the project further, you can click directly on the project title.</p>
+                    </div>
+                </div>
+                <a href="https://github.com/Maharanish" class="text-base font-semibold text-white bg-blue-900 py-3 px-8 rounded-full hover:shadow-lg hover:bg-blue-800">Other Projects</a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container mx-auto px-4">
+                <div class="w-full px-4 flex items-center justify-center">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to= shabrina.maharani22@gmail.com">
+                        <img src="images/email.png" alt="Email Icon" class="con"/>
+                    </a>
+                    <a href="https://github.com/Maharanish">
+                        <img src="images/github.png" alt="GitHub Icon" class="contact-icon"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shabrina-maharani-123456789/">
+                        <img src="images/linkedin.png" alt="LinkedIn Icon" class="contact-icon"/>
+                    </a>
+                    <a href="https://www.instagram.com/maharanishhh">
+                        <img src="images/instagram.png" alt="Instagram Icon" class="contact-icon"/>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <script src="js/script.js"></script>
+
+    </body>
+</html>
